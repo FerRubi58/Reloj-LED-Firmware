@@ -1,0 +1,16 @@
+{
+  "name": "Reloj LED",
+  "version": "2.7",
+  "new_install_prompt_erase": true,
+  "builds": [
+    {
+      "chipFamily": "ESP32",
+      "parts": [
+        { "path": "firmware/bootloader.bin", "offset": 4096 },
+        { "path": "firmware/partitions.bin", "offset": 32768 },
+        { "path": "firmware/boot_app0.bin", "offset": 57344 },
+        { "path": "firmware/reloj-led-v2.7.bin", "offset": 65536 }
+      ]
+    }
+  ]
+}
